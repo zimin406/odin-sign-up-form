@@ -1,24 +1,82 @@
 @font-face {
     font-family: Montserrat;
-    src: url("./resources/fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("../resources/fonts/Montserrat-VariableFont_wght.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url("./resources/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("../resources/fonts/Montserrat-Italic-VariableFont_wght.ttf");
     font-style: italic;
 }
 
 @font-face {
     font-family: Norse;
-    src: url("./resources/fonts/Norse-Regular.otf");
+    src: url("../resources/fonts/Norse-Regular.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Norse;
-    src: url("./resources/fonts/Norse-Bold.otf");
+    src: url("../resources/fonts/Norse-Bold.otf");
     font-weight: bold;
 }
 
+* {
+    font-family: Montserrat, sans-serif;
+}
+body {
+    display: flex;
+}
+/* CSS rules for <html>, <body> */
+
+div.logo-section {
+    width: 30%;
+    height: 100vh;
+    background-image: url("../resources/images/background-img-halie-west.jpeg");
+    background-position: center;
+    background-size: auto 100%;
+    position: relative;
+}
+
+div.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    top: 140px;
+    height: 140px;
+    padding: 0.2rem 0;
+    background-color: rgb(0, 0, 0, 0.6);   
+}
+
+h1.logo-title {
+    font-family: Norse, sans-serif;
+    font-weight: bold;
+    font-size: 4.8rem;
+    color: white;
+}
+
+img.logo-image {
+    height: 6rem;
+    width: auto;
+}
+
+p.image-credit {
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+p.image-credit > a:link {
+    color: white;
+}
+
+p.image-credit > a:visited {
+    color: pink;
+}
+/* logo=section */
