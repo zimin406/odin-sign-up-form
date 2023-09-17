@@ -24,6 +24,8 @@
 
 * {
     font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 body {
     display: flex;
@@ -36,16 +38,17 @@ div.logo-section {
     background-image: url("../resources/images/background-img-halie-west.jpeg");
     background-position: center;
     background-size: auto 100%;
-    position: relative;
+    background-attachment: fixed;
+    position: fixed;
 }
 
 div.logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
-    position: relative;
+    position: fixed;
     top: 140px;
+    width: inherit;
     height: 140px;
     padding: 0.2rem 0;
     background-color: rgb(0, 0, 0, 0.6);   
@@ -65,11 +68,11 @@ img.logo-image {
 
 p.image-credit {
     color: white;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
+    position: fixed;
+    bottom: 0.8rem;
+    width: inherit;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.92rem;
 }
 
 p.image-credit > a:link {
@@ -77,6 +80,101 @@ p.image-credit > a:link {
 }
 
 p.image-credit > a:visited {
-    color: pink;
+    color: rgb(204, 204, 204);
 }
+
 /* logo=section */
+div.form-section {
+    width: 70%;
+    margin-left: 30%;
+    background-color: rgb(249,250,251);
+}
+
+p.form-text-top {
+    padding-top: 8rem;
+    padding-bottom: 3.6rem;
+    padding-left: 6rem;
+    padding-right: 8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+div.form-card {
+    background-color: white;
+}
+
+h2.form-title {
+    font-size: 1.5rem;
+    padding-left: 6rem;
+    padding-top: 1.6rem;
+}
+
+form#sign-up-form {
+    padding: 1.6rem 0 1.8rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+div.form-container > label {
+    letter-spacing: 0.16rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+div.form-container > input {
+    width: 60%;
+    height: 1.8rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(229, 231, 235);
+    padding-left: 0.4rem;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+div.form-container > input:focus {
+    border: 1.2px solid blue;
+    box-shadow: 0.1rem 0.1rem 0.25rem rgb(0, 0, 0, 0.2);
+}
+
+div.form-container > input:invalid {
+    border: 1.2px solid red;
+    box-shadow: 0.1rem 0.1rem 0.25rem rgb(0, 0, 0, 0.2);
+}
+
+button.form-submit-button {
+    background-color: rgb(89,109,72);
+    color: white;
+    margin-top: 1.6rem;
+    margin-left: 6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.45rem;
+    box-shadow: 0.1rem 0.1rem 0.25rem rgb(0, 0, 0, 0.2);
+}   
+
+p.form-text-bottom {
+    margin-top: 1.6rem;
+    margin-bottom: 6rem;
+    padding-left: 6rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p.form-text-bottom > a:link,
+p.form-text-bottom > a:visited {
+    color: rgb(38, 46, 31);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
