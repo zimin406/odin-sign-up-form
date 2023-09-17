@@ -1,6 +1,6 @@
 const passwordInput = document.querySelector("input#user-password");
 const passwordConfirmInput = document.querySelector("input#user-password-confirm");
-const errorMessage = document.querySelector("div.user-password-confirm.form-container>span");
+const errorMessage = document.querySelector("span.password-message");
 
 passwordConfirmInput.addEventListener("focus", (event) => {
     errorMessage.textContent = "";

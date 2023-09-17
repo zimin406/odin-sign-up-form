@@ -120,6 +120,7 @@ div.form-container {
     flex-direction: column;
     width: 40%;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 div.form-container > label {
@@ -130,8 +131,9 @@ div.form-container > label {
 }
 
 div.form-container > input {
-    width: 60%;
+    width: 54%;
     height: 1.8rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     border-radius: 0.2rem;
     border: 1px solid rgb(229, 231, 235);
@@ -149,7 +151,16 @@ div.form-container > input:invalid {
     box-shadow: 0.1rem 0.1rem 0.25rem rgb(0, 0, 0, 0.2);
 }
 
-div.form-container.user-password-confirm > span {
+div.form-container > input:required + span::after {
+    content: "*";
+    position: absolute;
+    top: 2rem;
+    left: 60%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+span.password-message {
     color: red;
     font-size: 0.8rem;
 }
