@@ -149,6 +149,11 @@ div.form-container > input:invalid {
     box-shadow: 0.1rem 0.1rem 0.25rem rgb(0, 0, 0, 0.2);
 }
 
+div.form-container.user-password-confirm > span {
+    color: red;
+    font-size: 0.8rem;
+}
+
 button.form-submit-button {
     background-color: rgb(89,109,72);
     color: white;
