@@ -6,6 +6,19 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url("resources/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("./resources/fonts/Montserrat-Italic-VariableFont_wght.ttf");
     font-style: italic;
 }
+
+@font-face {
+    font-family: Norse;
+    src: url("./resources/fonts/Norse-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("./resources/fonts/Norse-Bold.otf");
+    font-weight: bold;
+}
+
